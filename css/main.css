@@ -533,4 +533,8 @@ span:nth-child(odd) {
 		font-size: 30px;
 		font-weight: bold;
 	}
+	.door {
+		width: 118px;
+		height: 203px;
+	}
 }
