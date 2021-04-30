@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/link.css">
+    <link rel="stylesheet" type="text/css" href="css/visit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+
+
+
+    <title>Make a visit</title>
+
+<body>
+    <h1>Visit Alice's Smart Home</h1>
+
+    <form action="response.html" method="get" name="reservation_form" id="reservation_form">
+        <fieldset>
+            <div class="center_form">
+                <legend>General Information</legend>
+                <label for="visit_date">Visit date:</label>
+                <input type="date" name="visit_date" id="visit_date" autofocus>
+                <span>*</span><br>
+                <label for="region">Region:</label>
+                <input type="text" name="region" id="region">
+                <span>*</span><br>
+                <label>Adults:</label>
+                <select name="adults" id="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br>
+                <label>Children:</label>
+                <select name="children" id="children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="center_form">
+                <legend>Preferences</legend>
+                <label>Time slot:</label>
+                <input type="radio" name="room" id="standard" class="left" checked>Morning&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="room" id="business" class="left">Afternoon&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="room" id="suite" class="left last">Evening<br>
+                <label>Desert type:</label>
+                <input type="radio" name="dessert" id="dessert" class="left" checked>Cake&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="dessert" id="dessert" class="left" checked>Pudding&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="dessert" id="dessert" class="left last">Muffin<br>
+                <label>Drink type:</label>
+                <input type="radio" name="drink" id="drink" class="left" checked>Water&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="drink" id="drink" class="left" checked>Tea&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="drink" id="drink" class="left last">Coffee<br>
+                <input type="checkbox" name="parking" id="parking">Parking required<br>
+                <input type="checkbox" name="pet" id="pet">Pet<br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="center_form">
+                <legend>Contact Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <span>*</span><br>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <span>*</span><br>
+                <label for="phone">Phone:</label>
+                <input type="text" name="phone" id="phone" placeholder="999-999-9999">
+                <span>*</span><br>
+            </div>
+        </fieldset>
+
+        <input type="submit" id="submit" value="Submit Request"><br>
+
+    </form>
+
+    <ul class="boxes">
+        <li class="box">
+            <a href="first.html">
+                <div class="card  card3">
+
+
+
+                    <div class="card-desc">IoT<br>
+                        <span> Designed by Alice Liu</span>
+                    </div>
+
+                </div>
+            </a>
+        </li>
+        <li class="box">
+
+            <div class="card card1">
+                <a href="home.html">
+                    <div class="card-desc">Go Back Home<br>
+                        <span> Designed by Alice Liu</span>
+                    </div>
+                </a>
+
+            </div>
+        </li>
+
+        <li class="box">
+            <div class="card card2 ">
+                <a href="index.html">
+                    <div class="card-desc">Smart Home App<br>
+                        <span> Designed by Alice Liu</span>
+                    </div>
+                </a>
+            </div>
+        </li>
+
+    </ul>
+
+</body>
+
+<footer>
+    <div id="foot">
+        Copyright of the IoT part for this project belongs to Alice Liu.<br>
+        The stove is implemented basing on the idea of:<br>
+        Theromostat from: https://codepen.io/HGreen7/pen/YMNdEB
+    </div>
+</footer>
+<script type="text/javascript" src="js/visit.js"></script>
+
+</html>

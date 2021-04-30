@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #D2DBDD;
+    width: 600px
+}
+
+main {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    border: 5px solid #efefef;
+}
+
+legend {
+    color: rgb(78 87 87);
+    font-weight: bold;
+    font-size: 125%;
+    margin-bottom: .5em;
+    margin: 0 auto;
+}
+
+label {
+    float: left;
+    width: 90px;
+    width: 100%;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+    margin: 0 auto;
+}
+
+input, select {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: .5em;
+}
+
+input {
+    width: 14em;
+}
+
+input.left {
+    width: 1em;
+    padding-left: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+input.last {
+    margin-bottom: 1em;
+}
+
+#adults, #children {
+    width: 35px;
+}
+
+#pet, #parking {
+    width: 1em;
+    margin-left: 0;
+}
+
+#submit {
+    margin: 0 auto;
+    width: 10em;
+    height: 45px;
+    line-height: 45x;
+    width: 40%;
+    background: rgb(117, 119, 119);
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+span {
+    color: red;
+}
+
+body {
+    margin: 0 auto;
+    width: 900px;
+    padding: 10px 20px;
+}
+
+fieldset {
+    margin: 10px auto;
+    padding: .5em;
+}
+
+h1 {
+    text-align: center;
+}
+
+.center_form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#foot {
+    text-align: center;
+    color: #091d36;
+    background-color: #aca8a4;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    input {
+        width: 90%;
+    }
+    body {
+        width: 100%;
+    }
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (min-width:601px) and (max-width: 960px) {
+    input {
+        width: 90%;
+    }
+    body {
+        width: 100%;
+    }
+}
