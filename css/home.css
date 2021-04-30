@@ -557,7 +557,7 @@ body {
 /*Photo*/
 
 .photo {
-    background-image: url(../images/back.png);
+    background-image: url(../images/picture.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 80px;
