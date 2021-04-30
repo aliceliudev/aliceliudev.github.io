@@ -183,12 +183,13 @@ body.active {
 	height: 130px;
 	text-align: center;
 	color: white;
+	font-weight: bold;
 }
 
 .door-knob {
 	position: relative;
 	top: -32px;
-	left: -27px;
+	left: -56px;
 	width: 10px;
 	height: 14px;
 	background: #49beaa;
@@ -512,5 +513,24 @@ span:nth-child(odd) {
 		font-size: 20px;
 		padding: 20px;
 		min-width: 0px;
+	}
+	.app {
+		width: 250px;
+		height: auto;
+	}
+	.room-with-door {
+		height: 380px;
+		width: 250px;
+	}
+	.door-knob {
+		position: relative;
+		top: -49px;
+		left: -100px;
+		width: 20px;
+		height: 20px;
+	}
+	.room {
+		font-size: 30px;
+		font-weight: bold;
 	}
 }

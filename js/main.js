@@ -64,11 +64,13 @@ var stoveSwitch = function() {
     if (status.kitchen) {
         $('#stove').addClass('active');
         tempHandle.addEventListener("mousedown", handleMouseDown);
+        tempHandle.addEventListener("touchstart", handleMouseDown);
     } else {
         $('#stove').removeClass('active');
         document.querySelector('.oven-temp-now').innerHTML = "";
         tempDisplay.innerHTML = "80";
         tempHandle.removeEventListener("mousedown", handleMouseDown);
+        tempHandle.addEventListener("touchstart", handleMouseDown);
         document.documentElement.style.setProperty("--temp-rotation", `180deg`);
     }
 };
@@ -111,6 +113,14 @@ function handleMouseDown(event) {
     rotating = true;
     origin = calculateRotationOrigin();
 }
+function handleTouchMove(event) {
+    if (rotating) {
+        event.preventDefault();
+        const { touches: { 0: { clientX, clientY } } } = event;
+        rotate(clientX, clientY);
+    }
+}
+
 
 function handleMouseMove(event) {
     if (rotating) {
@@ -150,9 +160,12 @@ function updateDial(angle) {
 
 //15 markings for Using 10 jQuery methods
 
+
 document.addEventListener("mousemove", handleMouseMove);
+document.addEventListener("touchmove", handleTouchMove, { passive: false });
 
 document.addEventListener("mouseup", handleMouseUp);
+document.addEventListener("touchend", handleMouseUp);
 
 window.addEventListener("resize", () => {
     origin = calculateRotationOrigin();
