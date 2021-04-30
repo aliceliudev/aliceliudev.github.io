@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Home Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/9cef78d00b.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/link.css">
+</head>
+
+<body>
+
+    <div class="container-top">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="content">
+                    <h3 class="room-title">Living Room door</h3>
+                    <hr />
+                    <div class="device-icon living"></div>
+                    <a class="button success-button toggle-button door-switch" data-name="door1"
+                        data-labelon="Open the door" data-labeloff="Close the door" href="#">Open
+                        the
+                        door</a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="content">
+                    <h3 class="room-title">Bedroom door</h3>
+                    <hr />
+                    <div class="device-icon bedroom"></div>
+                    <a class="button success-button toggle-button door-switch" data-name="door2"
+                        data-labelon="Open the door" data-labeloff="Close the door" href="#">Open
+                        the
+                        door</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="content">
+                    <h3 class="room-title">Basement door</h3>
+                    <hr />
+                    <div class="device-icon basement"></div>
+                    <a class="button success-button toggle-button door-switch" data-name="door3"
+                        data-labelon="Open the door" data-labeloff="Close the door" href="#">Open
+                        the
+                        door</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="content">
+                    <h3 class="room-title">Garage door</h3>
+                    <hr />
+                    <div class="device-icon garage"></div>
+                    <a class="button success-button toggle-button door-switch" data-name="door4"
+                        data-labelon="Open the door" data-labeloff="Close the door" href="#">Open
+                        the
+                        door</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="content">
+                    <h3 class="room-title">Bedroom light</h3>
+                    <hr />
+                    <div class="device-icon bedroomlight"></div>
+                    <a class="button success-button toggle-button  door-switch bulb" data-name="light"
+                        data-labelon="Turn on the light" data-labeloff="Turn off the light" href="#">Turn on
+                        the light</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="content">
+                    <h3 class="room-title">Kitchen</h3>
+                    <hr />
+                    <div class="device-icon kitchen"></div>
+                    <a class="button success-button toggle-button door-switch door-switch-oven" data-name="kitchen"
+                        data-labelon="Turn on the oven" data-labeloff="Turn off the oven" href="#">Turn on the
+                        Oven</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="middle_wrap">
+        <div class="container ">
+            <div class="bulb" id="bulb">
+
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" viewBox="0 0 275.3 413.3" enable-background="new 0 0 275.3 413.3" xml:space="preserve">
+                    <g id="off">
+                        <path fill="#E2ECF1" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8
+		c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z" />
+                    </g>
+                    <g id="on">
+                        <path fill="#FFDB55" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8
+		c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z" />
+
+                    </g>
+
+                    <g id="outline">
+                        <path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M168.5,375.5h-61.7c-8.9,0-16-7.2-16-16
+		v-55.8h93.8v55.8C184.6,368.3,177.4,375.5,168.5,375.5z" />
+                        <path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M151.2,401.5h-27.1c-3.9,0-7-3.2-7-7v-19
+		h41.1v19C158.2,398.4,155.1,401.5,151.2,401.5z" />
+                        <line fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" x1="184.6"
+                            y1="339.6" x2="90.8" y2="339.6" />
+                        <path fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4
+		c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z" />
+                    </g>
+                    <g id="highlight">
+                        <path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round"
+                            stroke-miterlimit="10" d="M207.1,89.5
+		c-12.3-16.1-28.4-29.1-46.9-37.8" />
+                        <path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round"
+                            stroke-miterlimit="10" d="M225,121.4
+		c-0.8-2.2-1.8-4.4-2.7-6.5" />
+                    </g>
+                </svg>
+            </div>
+            <div class="power">
+                Power on
+            </div>
+
+        </div>
+
+
+        <div class="flex-container">
+
+            <div class="room-with-door">
+                <div class="room">Living Room</div>
+                <div class="door-knob"></div>
+                <div id="door1" class="door1 door"></div>
+
+
+            </div>
+
+            <div class="room-with-door">
+                <div class="room">Bedroom door</div>
+                <div class="door-knob"></div>
+                <div id="door2" class="door2 door"></div>
+
+
+
+
+            </div>
+
+            <div class="room-with-door">
+                <div class="room">Basement </div>
+                <div class="door-knob"></div>
+                <div id="door3" class="door3 door"></div>
+
+
+            </div>
+
+            <div class="room-with-door">
+                <div class="room">Garage</div>
+                <div class="door-knob"></div>
+                <div id="door4" class="door4 door"></div>
+
+
+
+            </div>
+        </div>
+        <!--The stove-->
+        <div>
+
+            <main class="app" id="stove">
+                <div class="dial-container">
+
+
+                    <svg class="dial" viewBox="0 0 400 400">
+                        <defs>
+                            <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#e5e5e5" />
+                                <stop offset="100%" stop-color="#e5e5e5" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                        <line class="dial__tick" x1="50%" x2="50%" y1="17%" y2="83%" />
+                        <line class="dial__tick" x1="17%" x2="83%" y1="50%" y2="50%" />
+                        <circle class="dial__center" id="dial-center" cx="50%" cy="50%" r="120" />
+                        <text class="dial__temp" x="50%" y="50%" text-anchor="middle">
+                            <tspan id="temp-display">80</tspan>
+                            <tspan class="dial__temp-units">&deg;F</tspan>
+                        </text>
+                        <g class="dial__control">
+                            <circle class="dial__track" cx="50%" cy="50%" r="152" stroke="url(#linear)" />
+                            <circle id="temp-handle" class="dial__dot" cx="48" cy="50%" r="8" stroke="transparent"
+                                stroke-width="20">
+                        </g>
+                    </svg>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="position">
+        <div class="summary">
+
+            <div class="status">
+                <h3>IoT summary:</h3>
+                <div class=" display living">
+                    <p class="locked">The Living Room door is </p><span class="hidden">locked</span><span
+                        class="visible" id="status-door1" data-labelon="open" data-labeloff="closed"></span>
+                </div>
+                <div class=" display bedroom">
+                    <p class="locked">The Bedroom light is </p><span class="hidden">off</span><span class="visible"
+                        id="status-door2" data-labelon="open" data-labeloff="closed"></span>
+                </div>
+                <div class="display basement">
+                    <p class="locked">The Basement door is </p><span class="hidden">locked</span><span class="visible"
+                        id="status-door3" data-labelon="open" data-labeloff="closed"></span>
+                </div>
+                <div class="display garage">
+                    <p class="locked">The Garage door is </p><span class="hidden">locked</span><span class="visible"
+                        id="status-door4" data-labelon="open" data-labeloff="closed"></span>
+                </div>
+                <div class="display light_bedroom">
+                    <p class="locked">The Bedroom light is </p><span class="hidden">locked</span><span class="visible"
+                        id="status-light" data-labelon="on" data-labeloff="off"></span>
+                </div>
+                <div class="display kitchen">
+                    <p class="locked">The Kitchen appliance is </p><span class="hidden">off</span><span class="visible"
+                        id="status-kitchen" data-labelon="on" data-labeloff="off"></span>
+                    <span class="oven-temp-now"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <ul class="boxes">
+        <li class="box">
+            <div class="card  card3">
+                <a href="first.html">
+
+
+                    <div class="card-desc">IoT<br>
+                        <span> Designed by Alice Liu</span>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="box">
+            <div class="card card1 ">
+                <a href="home.html">
+                    <div class="card-desc">Go Back Home<br>
+                        <span> Designed by Alice Liu</span>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="box">
+
+            <div class="card card3">
+                <a href="visit.html">
+                    <div class="card-desc">Open House<br>
+                        <span> Designed by Alice Liu</span>
+                    </div>
+                </a>
+
+            </div>
+        </li>
+
+    </ul>
+
+
+</body>
+<footer>
+    <div id="foot">
+        Copyright of the IoT part for this project belongs to Alice Liu.<br>
+        The stove is implemented basing on the idea of:<br>
+        Theromostat from: https://codepen.io/HGreen7/pen/YMNdEB
+    </div>
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+</html>

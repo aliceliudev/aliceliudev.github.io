@@ -1,0 +1,240 @@
+#hero{
+    background-image: url(../../images/booking_hero.svg);
+    margin-bottom: 50px;
+}
+
+
+#search_items{
+    display: grid;
+    grid-template-rows: repeat(3, 25%);
+    grid-gap: 25px;
+    margin: 75px 0px 0px 0px;
+}
+
+.trip_select{
+    display: grid;
+    grid-template-columns: repeat(2, 213px);
+    grid-gap: 20px;
+    min-height: 35px;
+}
+
+.trip_select select{
+    background-color: #9bc1ee;
+    color: #091d36;
+    border-radius: 7px;
+    border: none;
+    padding: 0px 15px;
+    font-size: 50%;
+    font-weight: 600;
+    box-shadow: 0px 5px 10px 0px #555;
+}
+
+.trip_select select:hover{
+    background-color: #183c69;
+    color: #fff;
+    transition: 500ms; 
+}
+
+.icons{
+    color: #183c69;
+    display: grid;
+    grid-template-columns: repeat(4, 136px);
+}
+
+.icons i:hover{
+    color: #091d36;
+}
+
+#fly_select{
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    grid-gap: 20px;
+    
+}
+
+#fly_select div{
+    background-color: #9bc1ee;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px #555;
+}
+
+#fly_select div:hover{
+    background-color: #183c69;
+    color: #fff;
+    transition: 500ms; 
+}
+
+
+
+
+
+#fly_select p{
+    color: inherit;
+    text-align: center;
+    padding: 0%;
+    font-size: 50%;
+}
+
+.section_background{
+    padding: 75px 0px 100px;
+}
+
+table {
+    border-radius: 100px;
+    font-size: 22px;
+    font-weight:500;
+    border-collapse:collapse;
+    width:87%;
+    box-shadow: 0px 5px 10px 0px #b3b3b3;
+    margin: auto;
+    border-radius:20px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+
+  table th:first-child {
+    /* border-radius = top left, top right, bottom right, bottom left */
+      border-radius: 20px 0 0 0; /* curves the top left */
+     
+  }
+  
+  table th:last-child {
+      border-radius: 0 20px 0 0; /* curves the top right */
+  }
+
+
+
+.hotel_pricing td, .hotel_pricing th {
+    padding: 18px;   
+}
+
+.hotel_pricing caption {
+    text-align:center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.hotel_pricing td {
+    text-align: center;
+    font-size: 20px; 
+    
+}
+
+.hotel_pricing thead th { 
+    color: #091d36;
+    background: #9bc1ee;
+    white-space: nowrap;
+}
+
+
+.hotel_pricing tr:nth-child(even) {
+    background: #c2d7f0;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1024px){
+
+    #hero{
+        margin-bottom: 300px;
+    }
+    #search_items{
+        margin: 290px 0px 0px 0px
+    }
+
+    .trip_select{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .icons{
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
+
+    #fly_select{
+        grid-template-columns: auto;
+
+    }
+
+    #fly_select p{
+        font-size: 80%;
+    }
+
+    .trip_select select{
+        font-size: 80%;
+    }
+    
+}
+
+ 
+
+@media only screen and (max-width:768px){
+    #hero{
+        margin-bottom: 275px;
+    }
+    #search_items{
+        margin: 200px 0px 0px 0px
+    }
+    .hotel_pricing td {
+        text-align: right;
+        font-size: 18px;
+    }
+
+    table, caption, thead, tbody, th, td, tr{
+        display: block;
+        background-color: #9bc1ee;
+    }
+
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tr + tr { margin-top: 1.5em; }
+  
+    td{
+
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+    
+        background-color: #fff;
+        color:#091d36;
+        text-align: left;
+       
+    }
+
+    td:before {
+        position: absolute;
+        top: 17px;
+        left: -5px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-size: 18px;
+    }
+    
+    td:nth-of-type(1):before {content:"On-sale period"}
+    td:nth-of-type(2):before {content:"Hotel Name"}
+    td:nth-of-type(3):before {content: "Location"}
+    td:nth-of-type(4):before {content: "Lowest Price"}
+    td:nth-of-type(5):before {content: "Rating"}
+
+    .trip_select select{
+        font-size: 100%;
+    }
+    .icons{
+        font-size: 150%;
+    }
+    #fly_select p{
+        font-size: 100%;
+    }
+}  
+
+
+ 

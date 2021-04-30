@@ -1,0 +1,745 @@
+body {
+    background-color: #D2DBDD;
+}
+
+/*Links to other Apps*/
+
+.boxes {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 500px;
+}
+
+.boxes-wrap .boxes {
+    height: auto;
+    margin-top: 109px;
+}
+
+.box {
+    width: 240px;
+    flex-shrink: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 198px;
+}
+
+.card {
+    height: 235px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgb(0 0 0 / 10%);
+    margin: 20px;
+    background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card:hover {
+    box-shadow: 0px 30px 18px -8px rgb(0 0 0 / 10%);
+    transform: scale(1.10, 1.10);
+    opacity: .3;
+}
+
+.card-desc {
+    height: 50px;
+    background-color: #c7e8c661;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Kitchen*/
+
+body {
+    background: #333332;
+}
+
+.container, .cabinet, .hang, .cup, .oven, .switch, .mid, .table, .line, .washer, .plate, .pot, .vent, .smoke, .pasta {
+    position: absolute;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    top: 156px;
+    bottom: 0;
+    left: 445px;
+    right: 0;
+    width: 200px;
+    height: 10px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 10px;
+}
+
+.cabinet {
+    width: 450px;
+    height: 15px;
+    border: 3px solid #485566;
+    background: #d8b189;
+    top: -70px;
+    left: -15px;
+}
+
+.cabinet div {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    top: -36px;
+    background: #dcf2fc;
+    border: 3px solid #485566;
+    border-radius: 4px;
+    box-shadow: inset -4px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.cabinet div:before, .cabinet div:after {
+    position: absolute;
+    content: '';
+}
+
+.cabinet div:before {
+    top: -10px;
+    left: -3px;
+    width: 20px;
+    height: 5px;
+    background: #64b6ac;
+    border: 3px solid #485566;
+    border-radius: 4px;
+}
+
+.cabinet div:nth-child(1) {
+    left: 20px;
+}
+
+.cabinet div:nth-child(2) {
+    left: 50px;
+    top: -56px;
+    width: 20px;
+    height: 50px;
+    background: #dcf2fc;
+}
+
+.cabinet div:nth-child(3) {
+    left: 80px;
+}
+
+.pasta {
+    top: -117px;
+    left: 45px;
+    width: 3px;
+    height: 47px;
+    background: #92e8fd;
+    transform: rotate(-2deg);
+    box-shadow: 10px 0 0 #fdd692, 5px 0 0 #fdd692;
+}
+
+.vent {
+    top: -52px;
+    left: 46px;
+    width: 40px;
+    height: 40px;
+    background: #505252;
+    border: 3px solid #485566;
+    box-shadow: inset -5px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.vent:before, .vent:after {
+    position: absolute;
+    content: '';
+}
+
+.vent:after {
+    width: 40px;
+    top: 43px;
+    left: -50px;
+    border-bottom: 29px solid #505252;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.vent:before {
+    width: 48px;
+    top: 43px;
+    left: -64px;
+    border-bottom: 33px solid #485566;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+}
+
+.vent div {
+    position: absolute;
+    top: 75px;
+    left: -62px;
+    width: 159px;
+    height: 10px;
+    background: #505252;
+    border: 3px solid #485566;
+    border-top: none;
+}
+
+.hang {
+    top: -50px;
+    left: 250px;
+    width: 3px;
+    height: 18px;
+    background: #485566;
+    box-shadow: 120px 0 0 #485566, 60px 0 0 #485566;
+}
+
+.hang div:nth-child(2) {
+    left: 60px;
+}
+
+.hang div:nth-child(3) {
+    left: 120px;
+}
+
+.cup {
+    top: 20px;
+    width: 27px;
+    height: 35px;
+    background: #fff;
+    border-radius: 5px;
+    border: 3px solid #485566;
+    transform: rotate(30deg);
+    box-shadow: inset -5px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.cup:before {
+    position: absolute;
+    content: '';
+    top: 4px;
+    left: -15px;
+    width: 12px;
+    height: 15px;
+    border: 3px solid #485566;
+    border-radius: 4px;
+    border-right: none;
+}
+
+.oven {
+    width: 150px;
+    height: 170px;
+    background: #3d4042;
+    top: 130px;
+    border: 3px solid #485566;
+}
+
+.bnt {
+    width: 150px;
+    height: 30px;
+    background: #b5bfc4;
+    border-bottom: 3px solid #485566;
+}
+
+.bnt:before, .bnt:after {
+    position: absolute;
+    content: '';
+}
+
+.bnt:before {
+    top: 7px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    background: #6b7f89;
+    border-radius: 100%;
+    box-shadow: 60px 0 0 #6b7f89, 30px 0 0 #6b7f89;
+}
+
+.mid {
+    left: 15px;
+    width: 120px;
+    height: 70px;
+    background: #a7d0e5;
+    top: 60px;
+}
+
+.mid:before, .mid:after {
+    position: absolute;
+    content: '';
+}
+
+.mid:before {
+    top: -10px;
+    left: -8px;
+    width: 130px;
+    height: 10px;
+    border: 3px solid #485566;
+    background: #b5bfc4;
+    border-radius: 4px;
+}
+
+.mid:after {
+    top: -34px;
+    left: 40px;
+    border-bottom: 120px solid rgba(255, 255, 255, 0.3);
+    border-left: 40px solid transparent;
+    transform: rotate(270deg);
+}
+
+.table {
+    top: 146px;
+    left: 153px;
+    width: 252px;
+    height: 15px;
+    border: 3px solid #485566;
+    background: #89d8d8;
+}
+
+.table div {
+    position: absolute;
+    background: #89d8d8;
+    width: 100px;
+    height: 49px;
+}
+
+.table div:nth-child(1) {
+    top: 18px;
+    border-right: 3px solid #485566;
+}
+
+.table div:nth-child(2) {
+    top: 58px;
+    border-right: 3px solid #485566;
+    box-shadow: inset 0 3px 0 #485566;
+}
+
+.table div:nth-child(3) {
+    top: 105px;
+    box-shadow: inset 0 3px 0 #485566;
+    border-right: 3px solid #485566;
+    border-bottom: 3px solid #485566;
+}
+
+.line {
+    top: 186px;
+    left: 187px;
+    width: 40px;
+    height: 3px;
+    background: #b4ada5;
+    box-shadow: 0 90px 0 #b4ada5, 0 45px 0 #b4ada5;
+}
+
+.washer {
+    top: 164px;
+    left: 255px;
+    width: 150px;
+    height: 136px;
+    background: #5c5f61;
+    border: 3px solid #485566;
+}
+
+.washer div:nth-child(1), .washer div:nth-child(2) {
+    position: absolute;
+    top: 4px;
+    left: 110px;
+    width: 14px;
+    height: 14px;
+    background: #49beaa;
+    border-radius: 100%;
+}
+
+.washer div:nth-child(2) {
+    background: #ef767a;
+    left: 130px;
+}
+
+.washer div:nth-child(3) {
+    position: absolute;
+    top: 30px;
+    left: 11px;
+    width: 130px;
+    height: 10px;
+    background: #dcf2fc;
+}
+
+.plate {
+    top: 120px;
+    left: 200px;
+    width: 60px;
+    height: 20px;
+    background: #0ca2cf;
+    border-radius: 0 0 100px 100px;
+    border: 3px solid #485566;
+    box-shadow: inset -5px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.pot {
+    width: 55px;
+    height: 40px;
+    background: #0ca2cf;
+    border-radius: 5px;
+    border: 3px solid #485566;
+    top: 87px;
+    left: 10px;
+    box-shadow: inset -5px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.pot:before, .pot:after {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 10px;
+    border-radius: 5px;
+    border: 3px solid #485566;
+    left: -13px;
+    top: 5px;
+}
+
+.pot:after {
+    left: 55px;
+}
+
+/*
+.smoke {
+    top: -35px;
+    left: 20px;
+    width: 10px;
+    height: 25px;
+    border-radius: 100px 0 100px 0;
+    background: #b8bbbd;
+    box-shadow: 15px 5px 0 #dee2e4;
+    animation: 3s steam infinite ease;
+}
+*/
+
+/*Sofa*/
+
+.sittingRoom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.sofa {
+    width: 500px;
+    height: auto;
+}
+
+/*!!bulb*/
+
+/* body {
+	 background: #46484b;
+} 
+
+*/
+
+.cube-switch {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 5% 0px 0px 10%;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #333;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6), inset 0 100px 50px rgba(255, 255, 255, 0.1);
+    cursor: default;
+    pointer-events: none;
+    top: 180px;
+    left: 20px;
+}
+
+.cube-switch .switch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
+    display: block;
+    background: #666;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 0.7em;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -7px 0 rgba(0, 0, 0, 0.2), inset 0 50px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.2s ease-out;
+    /*Allows click */
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.cube-switch .switch-state {
+    display: block;
+    position: absolute;
+    left: 40%;
+    color: #fff;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.cube-switch .switch-state.on {
+    bottom: 15%;
+}
+
+.cube-switch .switch-state.off {
+    top: 15%;
+}
+
+.cube-switch.active .switch {
+    background: #333;
+    box-shadow: inset 0 6px 0 rgb(255 255 255 / 10%), inset 0 7px 0 rgb(0 0 0 / 20%), inset 0 -50px 10px rgb(0 0 0 / 10%), 0 1px 0 rgb(205 205 205 / 10%);
+}
+
+#switch_btn.cube-switch.active {
+    background-color: #333;
+}
+
+/*Clock*/
+
+.clock {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 1px 1px 5px #212121;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.hand {
+    width: calc(50% - 10px);
+    height: 4px;
+    top: 50%;
+    position: absolute;
+    background-color: #424242;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+}
+
+.hour-hand {
+    width: calc(50% - 10px);
+    transform: scale(0.7);
+}
+
+.second-hand {
+    height: 2px;
+    background-color: red;
+}
+
+.active {
+    background-color: yellow;
+}
+
+/*Photo*/
+
+.photo {
+    background-image: url(../images/me.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 110px;
+    box-shadow: 5px 1px 5px #212121;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    border: 8px solid rgb(70, 68, 68);
+    border-radius: 20%;
+    display: flex;
+    flex-direction: row;
+    opacity: 0.8;
+}
+
+/*Weather*/
+
+.weatherReport {
+    width: 100px;
+    background-color: hsl(41, 29%, 89%);
+    box-shadow: 1px 1px 5px #212121;
+    position: relative;
+    margin: 0 auto;
+    border: 5px solid #ccc;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 100px;
+    height: 125px;
+}
+
+.weatherReport h4 {
+    text-align: center;
+    margin: 0;
+}
+
+.weather {
+    width: 100%;
+    height: 30px;
+    background-size: 30px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.weather-cloudy {
+    background-image: url(../images/cloud.png);
+}
+
+.weather-sunny {
+    background-image: url(../images/sun.png);
+}
+
+.weather-rainy {
+    background-image: url(../images/weather.png);
+}
+
+.middle_container {
+    display: flex;
+}
+
+/*Responsive*/
+
+@media (max-width: 800px) {
+    .container {
+        transform: scale(0.7);
+    }
+    .boxes {
+        flex-direction: column;
+        height: auto;
+    }
+    .middle_container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media(max-width: 760px) {
+    .boxes {
+        flex-direction: column;
+        height: auto;
+    }
+    .middle_container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .container {
+        top: 499px;
+        left: -145px;
+        padding: revert;
+        top: 739px;
+        transform: scale(0.7);
+    }
+    .sittingRoom {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: auto;
+    }
+    h2 {
+        text-align: center;
+        margin-top: 214px;
+        padding-top: 60px;
+    }
+    .boxes-wrap .boxes {
+        height: auto;
+        margin-top: 7px;
+    }
+}
+
+@media(min-width:374px) and (max-width:759px) {
+    .clock {
+        width: 60px;
+        height: 60px;
+        margin: 10px auto;
+        padding: 29px;
+    }
+    .photo {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .weatherReport {
+        width: 100px;
+        margin: 10px auto;
+        margin-right: 0px
+    }
+    .cube-switch {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin: 5% 0px 0px 10%;
+    }
+    .container {
+        width: 200px;
+        height: 7px;
+        transform: scale(0.7);
+    }
+    .sittingRoom {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+        transform: scale(0.7);
+    }
+    h2 {
+        text-align: center;
+        margin-top: 269px;
+    }
+}
+
+#foot {
+    text-align: center;
+    color: #091d36;
+    background-color: #aca8a4;
+    line-height: 25px;
+}
+
+@media(min-width:761px) and (max-width:1200px) {
+    .container {
+        top: 156px;
+        bottom: 0;
+        left: 280px;
+        right: 0;
+        width: 200px;
+        height: 10px;
+        transform: scale(0.7);
+    }
+    .sittingRoom {
+        width: 80%;
+        margin-left: -54px;
+    }
+    .cube-switch {
+        top: 24px;
+        left: 11px;
+    }
+}
